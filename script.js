@@ -59,6 +59,7 @@ random.addEventListener('click',function(){
     questionJS.style.display="none"
 })
 
+<<<<<<< HEAD
 
 
 for (let i = 0; i < 9; i++){
@@ -71,3 +72,14 @@ for (let i = 0; i < 9; i++){
             fields[i].innerHTML=`<img src="blue.png"/>`
             first++
     }})}
+=======
+})
+if (first == 1){image=red}else{image=blue} 
+
+
+
+fields[1].addEventListener('click',function(){
+    fields[1].style.background(image)
+})
+
+>>>>>>> 967e129852e5dd0baeac7675188910fae4d30caf
