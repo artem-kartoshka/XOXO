@@ -60,6 +60,6 @@ red.addEventListener('click',function(){
 
 })
 if (first == 1){image='red.png'}else{image='blue.png'} 
-fields.addEventListener('click',function(){
-    fields.style.background(image)
+.01.addEventListener('click',function(){
+    .style.background(image)
 })
