@@ -78,4 +78,11 @@ red.addEventListener('click',function(){
     questionJS.style.display="none"
 
 })
+<<<<<<< HEAD
 >>>>>>> 09cb40df7daa065fbb5b2a88418250dffe9f7a07
+=======
+if (first == 1){image='red.png'}else{image='blue.png'} 
+fields.addEventListener('click',function(){
+    fields.style.background(image)
+})
+>>>>>>> 8fe1db2ad598da74f8cb78374292c1ec2cd2797c
