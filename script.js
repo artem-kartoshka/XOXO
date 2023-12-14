@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+<table id="field">
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+=======
 function randint(min,max){
     return Math.round(Math.random()*(max-min)+ min)}
 
@@ -59,7 +78,17 @@ red.addEventListener('click',function(){
     questionJS.style.display="none"
 
 })
+<<<<<<< HEAD
+>>>>>>> 09cb40df7daa065fbb5b2a88418250dffe9f7a07
+=======
 if (first == 1){image='red.png'}else{image='blue.png'} 
+<<<<<<< HEAD
 .01.addEventListener('click',function(){
     .style.background(image)
 })
+=======
+fields.addEventListener('click',function(){
+    fields.style.background(image)
+})
+>>>>>>> 8fe1db2ad598da74f8cb78374292c1ec2cd2797c
+>>>>>>> 6364b22edd47c17fa6a72d99309c7058fdc4bbbe
