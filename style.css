@@ -54,10 +54,15 @@ height: 100px;
     margin-right: auto;
     padding-top: 30px;
 }
-.result{
+.result_r{
     width: 249px;
     height: 211px;
     background: #D9D9D9;
+}
+.result_b{
+        width: 249px;
+        height: 211px;
+        background: #D9D9D9;
 }
 .yach{
     width: 111px;

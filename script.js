@@ -13,6 +13,7 @@ function check(elements){
      ) {
         console.log("red")
         pole.style.display="none"
+        resultr.style.display="flex"
 
     }
     if (
@@ -26,6 +27,7 @@ function check(elements){
         || (elements[2]==2 && elements[4]==2 && elements[6]==2) ) {
         console.log("blue")
         pole.style.display="none"
+        resultb.style.display="flex"
     }
 }
 let nameJS=document.querySelector('.name')
