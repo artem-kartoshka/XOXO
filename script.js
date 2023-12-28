@@ -119,8 +119,6 @@ for (let i = 0; i < 9; i++){
         gameb.style.display="flex"
         gamer.style.display="none"
         fields[i].innerHTML=`<img src="red.png"/>`
-        fieldsJS=document.querySelectorAll('.yach')
-        //console.log(fieldsJS)
         elements[i]=1
         console.log(elements)
         first++
@@ -130,8 +128,6 @@ for (let i = 0; i < 9; i++){
             gamer.style.display="flex"
             gameb.style.display="none"
             fields[i].innerHTML=`<img src="blue.png"/>`
-            fieldsJS=document.querySelectorAll('.yach')
-            //console.log(fieldsJS)
             first++
             elements[i]=2
             console.log(elements)
