@@ -102,6 +102,13 @@ random.addEventListener('click',function(){
     random.style.display="none"
     pole.style.display="flex"
     questionJS.style.display="none"
+    if (first % 2 == 1){
+        gamer.style.display="flex"
+        gameb.style.display="none"
+    }else{
+        gameb.style.display="flex"
+        gamer.style.display="none"
+    }
 })
 
 

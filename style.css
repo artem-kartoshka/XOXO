@@ -55,11 +55,17 @@ height: 100px;
     padding-top: 30px;
 }
 .result_r{
+    font-family: Inter;
+font-size: 32px;
+font-style: normal;
     width: 249px;
     height: 211px;
     background: #D9D9D9;
 }
 .result_b{
+    font-family: Inter;
+font-size: 32px;
+font-style: normal;
         width: 249px;
         height: 211px;
         background: #D9D9D9;
@@ -90,4 +96,36 @@ flex-direction: row;
     width: 333px;
     display: flex;
     flex-wrap: wrap;
+}
+
+.gamer{
+    font-family: Inter;
+font-size: 32px;
+font-style: normal;
+    width: 333px;
+    height: 140px;
+flex-shrink: 0;
+border: solid none 5px;
+margin: 2px;
+padding: 2px;
+position: relative;
+top: 20px;
+border-radius: 6%;
+background: rgba(217, 217, 217, 0.80);
+}
+
+.gameb{
+    font-family: Inter;
+font-size: 32px;
+font-style: normal;
+    width: 333px;
+    height: 140px;
+flex-shrink: 0;
+border: solid none 5px;
+margin: 2px;
+padding: 2px;
+position: relative;
+top: 20px;
+border-radius: 6%;
+background: rgba(217, 217, 217, 0.80);
 }
