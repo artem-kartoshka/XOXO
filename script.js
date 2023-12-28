@@ -4,15 +4,17 @@ function check(elements){
     if (
            (elements[0]==1 && elements[1]==1 && elements[2]==1)
         || (elements[3]==1 && elements[4]==1 && elements[5]==1)
-        || (elements[6]==1 && elements[7]==1 && elements[8]==2)
-        || (elements[0]==1 && elements[3]==1 && elements[6]==2)
-        || (elements[1]==1 && elements[4]==1 && elements[7]==2)
-        || (elements[2]==1 && elements[5]==1 && elements[8]==2)
-        || (elements[0]==1 && elements[4]==1 && elements[8]==2)
-        || (elements[2]==1 && elements[4]==1 && elements[6]==2)  
+        || (elements[6]==1 && elements[7]==1 && elements[8]==1)
+        || (elements[0]==1 && elements[3]==1 && elements[6]==1)
+        || (elements[1]==1 && elements[4]==1 && elements[7]==1)
+        || (elements[2]==1 && elements[5]==1 && elements[8]==1)
+        || (elements[0]==1 && elements[4]==1 && elements[8]==1)
+        || (elements[2]==1 && elements[4]==1 && elements[6]==1)  
      ) {
         console.log("red")
         pole.style.display="none"
+        gamer.style.display="none"
+        gameb.style.display="none"
         resultr.style.display="flex"
 
     }
@@ -27,6 +29,8 @@ function check(elements){
         || (elements[2]==2 && elements[4]==2 && elements[6]==2) ) {
         console.log("blue")
         pole.style.display="none"
+        gamer.style.display="none"
+        gameb.style.display="none"
         resultb.style.display="flex"
     }
 }
@@ -40,9 +44,12 @@ let resultr = document.querySelector('.result_r')
 let resultb = document.querySelector('.result_b')
 let pole = document.querySelector('.box')
 let fields=document.querySelectorAll('.yach')
+let gamer=document.querySelector('.gamer')
+let gameb=document.querySelector('.gameb')
 let first=0
 let elements=[0,0,0,0,0,0,0,0,0]
 let fieldsJS=[]
+
 
 nameJS.style.display="flex"
 startJS.style.display="flex"
@@ -53,6 +60,9 @@ resultb.style.display="none"
 red.style.display="none"
 blue.style.display="none"
 random.style.display="none"
+gamer.style.display="none"
+gameb.style.display="none"
+
 
 startJS.addEventListener('click', function(){
     nameJS.style.display="none"
@@ -65,6 +75,7 @@ startJS.addEventListener('click', function(){
 
 red.addEventListener('click',function(){
     first += 1
+    gamer.style.display="flex"
     red.style.display="none"
     blue.style.display="none"
     random.style.display="none"
@@ -75,6 +86,7 @@ red.addEventListener('click',function(){
 
 blue.addEventListener('click',function(){
     first += 2
+    gameb.style.display="flex"
     red.style.display="none"
     blue.style.display="none"
     random.style.display="none"
@@ -97,6 +109,8 @@ random.addEventListener('click',function(){
 for (let i = 0; i < 9; i++){
     fields[i].addEventListener('click', function() {
     if (first % 2 == 1){
+        gameb.style.display="flex"
+        gamer.style.display="none"
         fields[i].innerHTML=`<img src="red.png"/>`
         fieldsJS=document.querySelectorAll('.yach')
         //console.log(fieldsJS)
@@ -106,6 +120,8 @@ for (let i = 0; i < 9; i++){
         check(elements)
     }
         else{
+            gamer.style.display="flex"
+            gameb.style.display="none"
             fields[i].innerHTML=`<img src="blue.png"/>`
             fieldsJS=document.querySelectorAll('.yach')
             //console.log(fieldsJS)
