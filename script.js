@@ -16,7 +16,7 @@ function check(elements){
         gamer.style.display="none"
         gameb.style.display="none"
         resultr.style.display="flex"
-
+        startJS.style.display="flex"
     }
     if (
            (elements[0]==2 && elements[1]==2 && elements[2]==2) 
@@ -32,6 +32,7 @@ function check(elements){
         gamer.style.display="none"
         gameb.style.display="none"
         resultb.style.display="flex"
+        startJS.style.display="flex"
     }
 }
 let nameJS=document.querySelector('.name')
@@ -48,7 +49,6 @@ let gamer=document.querySelector('.gamer')
 let gameb=document.querySelector('.gameb')
 let first=0
 let elements=[0,0,0,0,0,0,0,0,0]
-let fieldsJS=[]
 
 
 nameJS.style.display="flex"
@@ -71,6 +71,19 @@ startJS.addEventListener('click', function(){
     red.style.display="flex"
     blue.style.display="flex"
     random.style.display="flex"
+    resultr.style.display="none"
+    resultb.style.display="none"
+    first=0
+    elements=[0,0,0,0,0,0,0,0,0]
+    fields[0].innerHTML=``
+    fields[1].innerHTML=``
+    fields[2].innerHTML=``
+    fields[3].innerHTML=``
+    fields[4].innerHTML=``
+    fields[5].innerHTML=``
+    fields[6].innerHTML=``
+    fields[7].innerHTML=``
+    fields[8].innerHTML=``
 })
 
 red.addEventListener('click',function(){
@@ -112,7 +125,6 @@ random.addEventListener('click',function(){
 })
 
 
-
 for (let i = 0; i < 9; i++){
     fields[i].addEventListener('click', function() {
     if (first % 2 == 1){
@@ -132,5 +144,4 @@ for (let i = 0; i < 9; i++){
             elements[i]=2
             console.log(elements)
             check(elements)
-    }
-    })}
+}})}
